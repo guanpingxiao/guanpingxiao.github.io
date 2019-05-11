@@ -68,7 +68,21 @@ function countDown(secs,surl){
      location.href=surl;     
 	 -ma
      }     
- }     
+ }
+function GetUrlRelativePath()
+　　{
+　　　　var url = document.location.toString();
+　　　　var arrUrl = url.split("//");
+
+　　　　var start = arrUrl[1].indexOf("/");
+　　　　var relUrl = arrUrl[1].substring(start);
+
+　　　　if(relUrl.indexOf("?") != -1){
+　　　　　　relUrl = relUrl.split("?")[0];
+　　　　}
+　　　　return relUrl;
+　　}
+
 </script> 
 
 <title>Error 404 (Not Found)</title>
@@ -79,8 +93,24 @@ function countDown(secs,surl){
 
 <div class="container">
 <h1>404</h1>
-<h1>Page Not Found!!</h1>
+<h1 id="errpage">
+<script>function GetUrlRelativePath()
+　　{
+　　　　var url = document.location.toString();
+　　　　var arrUrl = url.split("//");
+
+　　　　var start = arrUrl[1].indexOf("/");
+　　　　var relUrl = arrUrl[1].substring(start);
+
+　　　　if(relUrl.indexOf("?") != -1){
+　　　　　　relUrl = relUrl.split("?")[0];
+　　　　}
+　　　　return relUrl;
+　　}
+document.getElementById("errpage").innerHTML =GetUrlRelativePath(); 
+</script> not found!!</h1>
 </div>
+
 
 <div class="container">
 <h2><span id="jumpTo">5</span> sec to <a href="https://guanpingxiao.github.io">home page</a></h2>
