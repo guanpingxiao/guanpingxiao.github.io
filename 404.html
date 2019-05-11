@@ -19,12 +19,12 @@
 <style>
 a:link {
     text-decoration: none;
-	color: #4085f1;
+	color: black;
 }
 
 a:visited {
     text-decoration: none;
-	color: #4085f1;
+	color: black;
 }
 
 a:hover {
@@ -38,7 +38,7 @@ a:active {
 
 div.container{
 
-    text-align: center; 
+    text-align: left; 
 
 	height: auto;
 
@@ -46,7 +46,7 @@ div.container{
 
 	right: 0;
 
-	margin:50px auto;
+	margin:100px auto;
 	
 	max-width: 960px;
 
@@ -92,9 +92,8 @@ function GetUrlRelativePath()
 <body>
 
 <div class="container">
-<p style='color:#eb4336; font-size:50px;'><b>404</b></p>
-<h2 id="errpage">
-<script>function GetUrlRelativePath()
+<p style='color:#eb4336; font-size:25px;'><b>404</b></p>
+<p> <b>The requested URL </b><b id="errpage"><script>function GetUrlRelativePath()
 　　{
 　　　　var url = document.location.toString();
 　　　　var arrUrl = url.split("//");
@@ -108,12 +107,9 @@ function GetUrlRelativePath()
 　　　　return relUrl;
 　　}
 document.getElementById("errpage").innerHTML =GetUrlRelativePath(); 
-</script> <b style='color:#4085f1'>not found!</b></h2>
-</div>
+</script></b> <b> was not found.</b></p>
 
-
-<div class="container">
-<h2 ><span id="jumpTo" style='color:#eb4336'>5</span><b style='color:#4085f1'> sec to <a href="https://guanpingxiao.github.io">home page!</a></b></h2>
+<p><b><span id="jumpTo" style='color:#eb4336'>5</span></b><b> sec to <a href="https://guanpingxiao.github.io">home page.</a></b></p>
 <script type="text/javascript">
 countDown(5,'https://guanpingxiao.github.io/');
 </script>
