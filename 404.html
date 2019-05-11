@@ -19,12 +19,12 @@
 <style>
 a:link {
     text-decoration: none;
-	color: blue;
+	color: #4085f1;
 }
 
 a:visited {
     text-decoration: none;
-	color: blue;
+	color: #4085f1;
 }
 
 a:hover {
@@ -92,7 +92,8 @@ function GetUrlRelativePath()
 <body>
 
 <div class="container">
-<h1>404</h1>
+<h1 style='color:#eb4336'>404</h1>
+
 <h2 id="errpage">
 <script>function GetUrlRelativePath()
 　　{
@@ -108,12 +109,12 @@ function GetUrlRelativePath()
 　　　　return relUrl;
 　　}
 document.getElementById("errpage").innerHTML =GetUrlRelativePath(); 
-</script> not found!!</h2>
+</script> <b style='color:#4085f1'>not found!</b></h2>
 </div>
 
 
 <div class="container">
-<h2><span id="jumpTo">5</span> sec to <a href="https://guanpingxiao.github.io">home page</a></h2>
+<h2 style='color:#4085f1'><span id="jumpTo">5</span> sec to <a href="https://guanpingxiao.github.io">home page</a></h2>
 <script type="text/javascript">
 countDown(5,'https://guanpingxiao.github.io/');
 </script>
