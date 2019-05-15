@@ -1,0 +1,68 @@
+a:link {
+    text-decoration: none;
+	color: #4085f1;
+}
+
+a:visited {
+    text-decoration: none;
+	color: #4085f1;
+}
+
+a:hover {
+    text-decoration: underline;
+	color: red;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+div.container{
+
+	position: relative;
+
+	height: auto;
+
+	left: 0;
+
+	right: 0;
+
+	margin:50px auto;
+	
+	max-width: 960px;
+
+}
+
+
+div.circle{
+    width: 17px;
+    height: 17px;
+    border-radius: 8.5px;
+    margin:auto;
+    background-color:#fdb425 ;
+    text-align:center;
+    font-size:12px;
+    display: inline-block;
+    line-height:17px;
+    cursor:pointer;
+}
+
+h2.google{
+    display: inline-block;
+	margin:auto;
+	cursor:pointer;
+}
+
+div.page404{
+
+    text-align: left;
+
+    margin:200px auto;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    max-width: 720px;
+
+}
