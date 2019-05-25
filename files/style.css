@@ -70,4 +70,6 @@ div.page404{
 .intro{
     color:gray;
     cursor:pointer;
+	margin-left:auto; 
+    margin-right:auto;
 }
