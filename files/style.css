@@ -1,6 +1,7 @@
 a:link {
     text-decoration: none;
-	color: #4085f1;
+    color: #4085f1;
+
 }
 
 a:visited {
@@ -10,7 +11,7 @@ a:visited {
 
 a:hover {
     text-decoration: underline;
-	color: red;
+	color: #fc8d62;
 }
 
 a:active {
