@@ -3,14 +3,14 @@ body{
 font-family:Arial,Helvetica,sans-serif; 
 }
 
-.banner a:link {
+.bannericon a:link {
     color: #525252;
 
 }
-.banner a:hover {
+.bannericon a:hover {
 	color: #fc8d62;
 }
-.banner a:visited {
+.bannericon a:visited {
 	color: #525252;
 }
 
