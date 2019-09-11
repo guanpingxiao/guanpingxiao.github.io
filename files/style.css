@@ -19,6 +19,7 @@ a:active {
 }
 
 div.banner{
+	margin:0 auto;
     border-bottom: solid #4085f1 1px;
 }
 
