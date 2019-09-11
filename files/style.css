@@ -50,9 +50,9 @@ div.container{
 
 
 div.circle{
-    width: 18px;
-    height: 18px;
-    border-radius: 9px;
+    width: 19px;
+    height: 19px;
+    border-radius: 9.5px;
     margin:auto;
     background-color:#fdb425 ;
     text-align:center;
