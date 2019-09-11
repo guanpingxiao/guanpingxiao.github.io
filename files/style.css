@@ -1,3 +1,14 @@
+.name a:link {
+    color: #525252;
+
+}
+.name a:hover {
+	color: #fc8d62;
+}
+.name a:visited {
+	color: #525252;
+}
+
 a:link {
     text-decoration: none;
     color: #4085f1;
@@ -14,13 +25,11 @@ a:hover {
 	color: #fc8d62;
 }
 
-a:active {
-    text-decoration: underline;
-}
+
 
 div.banner{
 	margin:0 auto;
-    border-bottom: solid #4085f1 1px;
+    border-bottom: solid #525252 1px;
 }
 
 .name{
