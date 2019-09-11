@@ -3,14 +3,14 @@ body{
 font-family:Arial,Helvetica,sans-serif; 
 }
 
-.name a:link {
+.banner a:link {
     color: #525252;
 
 }
-.name a:hover {
+.banner a:hover {
 	color: #fc8d62;
 }
-.name a:visited {
+.banner a:visited {
 	color: #525252;
 }
 
@@ -34,7 +34,10 @@ a:hover {
 
 div.banner{
 	margin:0 auto;
-    border-bottom: solid #525252 1px;
+    position: relative;
+	max-width: 640px;
+
+
 }
 
 .name{
