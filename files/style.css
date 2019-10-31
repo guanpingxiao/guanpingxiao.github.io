@@ -27,7 +27,6 @@ div.banner{
 	margin:0 auto;
 	max-width: 960px;
 
-
 }
 
 
@@ -86,6 +85,7 @@ div.page404{
     color:gray;
 	margin-left:auto; 
     margin-right:auto;
+	text-align:left;
 }
 
 .me{
