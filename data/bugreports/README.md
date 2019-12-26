@@ -1,8 +1,5 @@
 # Bug Report Raw Data
 
-
-
-
 Data Overview (compression format: .tar.bz2, file format: .xml)
 
 No | Project | # of Reports | Size | Period
@@ -17,3 +14,7 @@ No | Project | # of Reports | Size | Period
 8 | [LLVM](https://drive.google.com/open?id=1i_oV2G2Ade5FLqZiBOS_8fNw89_53L2Q) | 38,107| 31MB | 10/07/03 - 09/30/18
 9 | [OpenOffice](https://drive.google.com/open?id=1N7eByW7NwpkYuu-MvBBWeMzDwfwRoA2f) | 127,797 | 85MB | 10/16/00- 09/30/18
 &nbsp; |  Total | 2,038,675 | 1.86GB | &nbsp;
+
+# Bug Report Crawler
+
+All bug reports are downloaded by a [web crawler](https://github.com/guanpingxiao/BugReportCrawler)
