@@ -61,6 +61,32 @@ div.circle{
     cursor:pointer;
 }
 
+div.burst-12:before, div.burst-12:after {
+   content: "new";
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 21px;
+   width: 21px;
+   background-color: #eb4336;
+   color:black;
+   font-weight: bold;
+}
+div.burst-12:before {
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	-o-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+div.burst-12:after {
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	-ms-transform: rotate(60deg);
+	-o-transform: rotate(60deg);
+	transform: rotate(60deg);
+}
+
 h2.google{
     display: inline-block;
 	margin:auto;
