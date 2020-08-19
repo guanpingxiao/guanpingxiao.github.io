@@ -61,6 +61,19 @@ div.circle{
     cursor:pointer;
 }
 
+div.burst-12 {
+    background-color: #eb4336;
+    width: 21px;
+    height: 21px;	
+    margin:auto;
+    text-align:center;
+    font-size:12px;
+    display: inline-block;
+    line-height:17px;
+	position: relative;
+	
+}
+
 div.burst-12:before, div.burst-12:after {
    content: "new";
    position: absolute;
