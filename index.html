@@ -23,7 +23,7 @@
 
 <div class="sidebar">
 <div style="text-align:center;margin:25px 0 0 0;"><img src='files/guanpingxiao.jpg' style="width:192px;height:192px;border-radius:50%;" alt="Guanping Xiao"></div>
-<div style="text-align:center;cursor: pointer;"onclick="location='http://faculty.nuaa.edu.cn/xiaoguanping'" onmouseover="this.style.cursor='hand'"><h1 style="font-size:18pt;">Guanping Xiao</h1></div>
+<div style="text-align:center;"><h1 style="font-size:18pt;">Guanping Xiao</h1></div>
 <div style="text-align:center;font-size:10pt;color:gray;">
 <div style="cursor: pointer;" onclick="location='http://cs.nuaa.edu.cn/'" onmouseover="this.style.cursor='hand'">College of Computer Science and Technology</div>
 <div style="cursor: pointer;" onclick="location='http://www.nuaa.edu.cn/'" onmouseover="this.style.cursor='hand'">Nanjing University of Aeronautics and Astronautics</div>
@@ -439,4 +439,92 @@
 
 <tr>
 <td style="width:75px;">&bull;&emsp;2014</td>
-<td style="width:450px;"
+<td style="width:450px;">National Scholarship for Graduate Students</td>
+<td>Ministry of Education of the People's Republic of China</td>
+</tr>
+
+<tr>
+<td style="width:75px;">&bull;&emsp;2014</td>
+<td style="width:450px;">Outstanding Graduate Student</td>
+<td>Civil Aviation University of China</td>
+</tr>
+
+<tr>
+<td style="width:75px;">&bull;&emsp;2009</td>
+<td style="width:450px;">The Second Prize Scholarship</td>
+<td>Nanjing University of Aeronautics and Astronautics</td>
+</tr>
+
+</table>
+</div>
+
+<div class="container">
+<h2>Useful Links</h2>
+<table >
+<tr>
+<td>&bull;&emsp;<a href="http://www.cs.columbia.edu/~hgs/etc/writing-style.html">Writing Technical Articles</a></td>
+</tr>
+
+
+<tr>
+<td>&bull;&emsp;<a href="https://brians.wsu.edu/common-errors/">Common Errors in English Usage</a></td>
+</tr>
+
+<tr>
+<td>&bull;&emsp;<a href="http://colorbrewer2.org/">ColorBrewer: Color Advice for Maps</a></td>
+</tr>
+
+
+<tr>
+<td>&bull;&emsp;<a href="http://www.cs.utah.edu/~lepreau/osdi94/keynote/abstract.html">How to Have a Bad Career in Research/Academia</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="container">&nbsp;</div>
+</div>
+
+<script>
+const link_publications = document.querySelector('.nav-publications');
+target_publications = document.getElementById('nav-publications');
+
+const link_grants = document.querySelector('.nav-grants');
+target_grants = document.getElementById('nav-grants');
+
+
+const link_services = document.querySelector('.nav-services');
+target_services = document.getElementById('nav-services');
+
+const link_tools = document.querySelector('.nav-tools');
+target_tools = document.getElementById('nav-tools');
+
+
+config = {
+	behavior: 'smooth'
+}
+
+link_publications.addEventListener('click', (event)=>{
+	event.stopPropagation();
+	target_publications.scrollIntoView(config);
+})
+
+link_grants.addEventListener('click', (event)=>{
+	event.stopPropagation();
+	target_grants.scrollIntoView(config);
+})
+
+link_services.addEventListener('click', (event)=>{
+	event.stopPropagation();
+	target_services.scrollIntoView(config);
+})
+
+link_tools.addEventListener('click', (event)=>{
+	event.stopPropagation();
+	target_tools.scrollIntoView(config);
+})
+
+</script>
+
+
+</body>
+</html>
