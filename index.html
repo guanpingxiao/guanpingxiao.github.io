@@ -22,16 +22,17 @@
 <body>
 
 <div class="sidebar">
-<div style="text-align:center;margin:25px 0 0 0;"><img src='files/guanpingxiao.jpg' style="width:192px;height:192px;border-radius:50%;" alt="Guanping Xiao"></div>
+<div style="text-align:center;margin:10px 0 0 0;"><img src='files/guanpingxiao.jpg' style="width:192px;height:192px;border-radius:50%;" alt="Guanping Xiao"></div>
 <div style="text-align:center;cursor: pointer;" onclick="location='http://faculty.nuaa.edu.cn/xiaoguanping'" onmouseover="this.style.cursor='hand'"><h1 style="font-size:18pt;">Guanping Xiao</h1></div>
 <div style="text-align:center;font-size:10pt;color:gray;">
 <div style="cursor: pointer;" onclick="location='http://cs.nuaa.edu.cn/'" onmouseover="this.style.cursor='hand'">College of Computer Science and Technology</div>
 <div style="cursor: pointer;" onclick="location='http://www.nuaa.edu.cn/'" onmouseover="this.style.cursor='hand'">Nanjing University of Aeronautics and Astronautics</div>
 <div style="cursor: pointer;" onclick="location='mailto:gpxiao@nuaa.edu.cn'" onmouseover="this.style.cursor='hand'">gpxiao@nuaa.edu.cn</div>
 </div>
-<div style="text-align:center;margin:15px auto;cursor: pointer;">
+<div style="text-align:center;margin:10px auto;cursor: pointer;">
 <a class="nav-publications">Publications</a>
 <a class="nav-grants">Research Grants</a>
+<a class="nav-students">Team</a>
 <a class="nav-services">Services</a>
 <a class="nav-tools">Tools and Data</a>
 <a href="resume_cn.html">中文简历</a>
@@ -532,6 +533,9 @@ const link_grants = document.querySelector('.nav-grants');
 target_grants = document.getElementById('nav-grants');
 
 
+const link_team = document.querySelector('.nav-students');
+target_team = document.getElementById('nav-students');
+
 const link_services = document.querySelector('.nav-services');
 target_services = document.getElementById('nav-services');
 
@@ -549,6 +553,11 @@ link_publications.addEventListener('click', (event)=>{
 })
 
 link_grants.addEventListener('click', (event)=>{
+	event.stopPropagation();
+	target_grants.scrollIntoView(config);
+})
+
+link_team.addEventListener('click', (event)=>{
 	event.stopPropagation();
 	target_grants.scrollIntoView(config);
 })
