@@ -16,33 +16,28 @@
 
 <link rel="stylesheet" type="text/css" href="/files/style.css">
 
-<script>     
-function countDown(secs,surl){         
- var jumpTo = document.getElementById('jumpTo');
- jumpTo.innerHTML=secs;  
- if(--secs>0){     
-     setTimeout("countDown("+secs+",'"+surl+"')",1000);     
-     }     
- else{       
-     location.href=surl;     
-	 -ma
-     }     
- }
-function GetUrlRelativePath()
-　　{
-　　　　var url = document.location.toString();
-　　　　var arrUrl = url.split("//");
+<script>
+function countDown(secs, surl) {
+  var jumpTo = document.getElementById('jumpTo');
+  jumpTo.innerHTML = secs;
+  if (--secs > 0) {
+    setTimeout("countDown(" + secs + ",'" + surl + "')", 1000);
+  } else {
+    location.href = surl;
+  }
+}
 
-　　　　var start = arrUrl[1].indexOf("/");
-　　　　var relUrl = arrUrl[1].substring(start);
-
-　　　　if(relUrl.indexOf("?") != -1){
-　　　　　　relUrl = relUrl.split("?")[0];
-　　　　}
-　　　　return relUrl;
-　　}
-
-</script> 
+function GetUrlRelativePath() {
+  var url = document.location.toString();
+  var arrUrl = url.split("//");
+  var start = arrUrl[1].indexOf("/");
+  var relUrl = arrUrl[1].substring(start);
+  if (relUrl.indexOf("?") != -1) {
+    relUrl = relUrl.split("?")[0];
+  }
+  return relUrl;
+}
+</script>
 
 <title>Error 404 (Not Found)</title>
 </head>
@@ -52,25 +47,12 @@ function GetUrlRelativePath()
 
 <div class="page404">
 <p style='color:#eb4336; font-size:25px;'><b>404</b></p>
-<p> <b>The requested URL </b><b id="errpage"><script>function GetUrlRelativePath()
-　　{
-　　　　var url = document.location.toString();
-　　　　var arrUrl = url.split("//");
-
-　　　　var start = arrUrl[1].indexOf("/");
-　　　　var relUrl = arrUrl[1].substring(start);
-
-　　　　if(relUrl.indexOf("?") != -1){
-　　　　　　relUrl = relUrl.split("?")[0];
-　　　　}
-　　　　return relUrl;
-　　}
-document.getElementById("errpage").innerHTML =GetUrlRelativePath(); 
-</script></b> <b> was not found.</b></p>
+<p><b>The requested URL </b><b id="errpage"></b><b> was not found.</b></p>
 
 <p><b><span id="jumpTo" style='color:#eb4336'>5</span></b><b> sec to home page.</b></p>
 <script>
-countDown(5,'https://guanpingxiao.github.io/');
+document.getElementById("errpage").innerHTML = GetUrlRelativePath();
+countDown(5, 'https://guanpingxiao.github.io/');
 </script>
 </div>
 
