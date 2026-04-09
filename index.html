@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" itemscope="" itemtype="http://schema.org/Person" class="">
+<html lang="en" itemscope="" itemtype="http://schema.org/Person">
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXD050ZS5P"></script>
@@ -21,1024 +21,736 @@
 
 <body>
 
-<div class="sidebar">
-<div style="text-align:center;margin:10px 0 0 0;"><img src='files/guanpingxiao.jpg' style="width:200px;height:200px;border-radius:8%;" alt="Guanping Xiao"></div>
-<div style="text-align:center;cursor: pointer;" onclick="location='http://faculty.nuaa.edu.cn/xiaoguanping'" onmouseover="this.style.cursor='hand'"><h1 style="font-size:15pt;">Guanping Xiao<br>肖冠平</h1></div>
-<div style="text-align:center;font-size:10pt;color:gray;">
-<div style="cursor: pointer;" onclick="location='http://cs.nuaa.edu.cn/'" onmouseover="this.style.cursor='hand'">College of Computer Science and Technology</div>
-<div style="cursor: pointer;" onclick="location='http://www.nuaa.edu.cn/'" onmouseover="this.style.cursor='hand'">Nanjing University of Aeronautics and Astronautics</div>
-<div style="cursor: pointer;" onclick="location='mailto:gpxiao@nuaa.edu.cn'" onmouseover="this.style.cursor='hand'">gpxiao@nuaa.edu.cn</div>
+<nav class="sidebar" id="sidebar">
+<div class="mobile-header">
+<img src="files/guanpingxiao.jpg" class="mobile-avatar" alt="Guanping Xiao">
+<span class="mobile-name">Guanping Xiao</span>
+<button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+<span class="hamburger-line"></span>
+<span class="hamburger-line"></span>
+<span class="hamburger-line"></span>
+</button>
 </div>
-<div style="text-align:center;margin:10px auto;cursor: pointer;">
-<a class="nav-publications">Publication</a>
-<a class="nav-services">Professional Services</a>
-<a class="nav-students">Team</a>
-<a class="nav-teaching">Teaching</a>
-<a class="nav-grants">Research Grants</a>
-<a class="nav-tools">Tools</a>
-
+<div class="sidebar-profile">
+<img src="files/guanpingxiao.jpg" class="avatar" alt="Guanping Xiao">
+<h1 class="name"><a href="http://faculty.nuaa.edu.cn/xiaoguanping" class="name-link">Guanping Xiao<br>肖冠平</a></h1>
+<div class="affiliation">
+<a href="http://cs.nuaa.edu.cn/">College of Computer Science and Technology</a>
+<a href="http://www.nuaa.edu.cn/">Nanjing University of Aeronautics and Astronautics</a>
+<a href="mailto:gpxiao@nuaa.edu.cn" class="email">gpxiao@nuaa.edu.cn</a>
 </div>
 </div>
+<div class="nav-links" id="nav-links">
+<a href="#bio" class="nav-link">Bio</a>
+<a href="#news" class="nav-link">News</a>
+<a href="#publications" class="nav-link">Publication</a>
+<a href="#team" class="nav-link">Team</a>
+<a href="#services" class="nav-link">Professional Services</a>
+<a href="#teaching" class="nav-link">Teaching</a>
+<a href="#tools" class="nav-link">Tools</a>
+<a href="#grants" class="nav-link">Research Grants</a>
+<a href="#links" class="nav-link">Useful Links</a>
+</div>
+</nav>
 
-<div class="content">
+<main class="content">
 
-<div class="container">
+<section id="bio" class="section">
 <h2>Bio</h2>
-<p style="line-height:1.25;">
+<p class="bio-text">
 Guanping Xiao is with the <a href="http://cs.nuaa.edu.cn">College of Computer Science and Technology</a>, <a href="http://www.nuaa.edu.cn">Nanjing University of Aeronautics and Astronautics (NUAA)</a>, where he is an Associate Professor. His research is in software engineering, with a focus on intelligent software reliability, empirical software engineering, and program analysis to improve the reliability and quality of modern software systems. Specifically, his current research projects explore the automated detection and repair of API compatibility issues in Python programs.
 
 He leads the development of <a href="https://github.com/PCART-tools/PCART">PCART</a>, an open-source project for automated analysis and repair of Python API parameter compatibility issues, built in collaboration with students and colleagues.
 </p>
-</div>
+</section>
 
-<div class="container">
+<section id="news" class="section">
 <h2>News</h2>
 
-<table style="border-collapse:separate; border-spacing:0px 7.5px;">
-
-
-<tr>
-<td style="width:125px;">2026/03</td>	
-<td>Our <a href="https://github.com/pcart-tools/pcreq">PCREQ</a> paper has been accepted by <a href="https://dl.acm.org/journal/tosem">ACM TOSEM</a>. Congrats to Huashan!
-</td>
-</tr>
-
-<tr>
-<td style="width:125px;">2026/03</td>
-<td>Our student, Huashan Lei, has been awarded the Outstanding Graduate Student honor (优秀毕业研究生). Congrats!
-</td>
-</tr>
-
-<tr>
-<td style="width:125px;">2025/12</td>	
-<td>Our <a href="https://github.com/pcart-tools">PCART</a> paper has been accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=32">IEEE TSE</a>. Congrats to Shuai!
-</td>
-</tr>
-
-
-<tr>
-<td style="width:125px;">2025/08</td>	
-<td>Our tool, <a href="https://github.com/pcart-tools/pcreq">PCREQ</a>, an automated tool for inferring compatible requirements for Python third-party library (TPL) upgrades, has been released. Please try this tool and give us feedback and suggestions! Relevant paper can be found <a href="https://arxiv.org/abs/2508.02023">here</a>.
-</td>
-</tr>
-
-
-<tr>
-<td style="width:125px;">2025/03</td>
-<td>Our students, Shuai Zhang and Jun Wang, have been awarded the Outstanding Graduate Student honor (优秀毕业研究生). Congrats!
-</td>
-</tr>
-
-
-
-<tr>
-<td style="width:125px;">2024/11</td>
-<td>Invited to serve on the Program Committee for the FSE Student Research Competition 2025 (<a href="https://conf.researchr.org/track/fse-2025/fse-2025-student-research-competition">FSE SRC 2025</a>). Undergraduate and graduate students are encouraged to participate!
-</td>
-</tr>
-
-
-<tr>
-<td style="width:125px;">2024/11</td>
-<td>Our student Jun Wang won the "National Scholarship for Graduate Students" (硕士研究生国家奖学金). Congrats!
-</td>
-</tr>
-
-
-<tr>
-<td style="width:125px;">2024/10</td>
-<td>Our students Shuai Zhang and Huashan Lei won two honors from NUAA: "Outstanding Individual in Scientific Research and Innovation" (科研创新先进个人) and "Outstanding Graduate Student" (三好研究生). Congrats!
-</td>
-</tr>
-
-
-<tr>
-<td style="width:125px;">2024/08</td>	
-<td>Our work on Python API variadic parameters has been accepted by <a href="https://issre.github.io/2024/">ISSRE 2024</a> fast abstracts track. Congrats to Shuai!
-</td>
-</tr>
-
-<tr>
-<td style="width:125px;">2024/07</td>	
-<td>I have been promoted to Associate Professor.
-</td>
-</tr>
-
-
-
-<tr>
-<td style="width:125px;">2024/06</td>	
-<td>Our tool, <a href="https://github.com/pcart-tools">PCART</a>, a precise and fully automated detection and repair tool for Python API parameter compatibility issues, has been released. Please try this tool and give us feedback and suggestions! Relevant paper can be found <a href="https://arxiv.org/abs/2406.03839">here</a>.
-</td>
-</tr>
-
-<tr>
-<td style="width:125px;">2024/06</td>	
-<td>Our work on LLM evaluation using empirical software engineering tasks has been accepted by <a href="https://conf.researchr.org/home/internetware-2024">Internetware 2024</a>. Congrats to Wenjun!
-</td>
-</tr>
-
-<tr>
-<td style="width:125px;">2024/03</td>	
-<td>Please submit your high-quality work to <a href="https://issre.github.io/2024/">ISSRE 2024</a>, <a href="https://conf.researchr.org/home/internetware-2024">Internetware 2024</a>, and <a href="https://qrs24.techconf.org/">QRS 2024</a>!
-</td>
-</tr>
-	
-<tr>
-<td style="width:125px;">2024/02</td>
-<td>Our work on traceability link recovery using deep semi-supervised learning techniques has been accepted by <a href="https://www.sciencedirect.com/journal/journal-of-systems-and-software">JSS</a>. Congrats to Jianfei!
-</td>
-</tr>
-
-<tr>
-<td style="width:125px;">2023/12</td>
-<td>Our UAV log anomaly analysis work has been accepted by <a href="https://conf.researchr.org/home/icse-2024">ICSE 2024</a>.
-</td>
-</tr>
-
-<tr>
-<td style="width:125px;">2023/11</td>
-<td>Our student Huashan Lei won Master's Graduate Special Freshman Scholarship (Second Prize) of NUAA (2023级硕士研究生新生特别奖学金二等奖).
-</td>
-</tr>
-
-<tr>
-<td style="width:125px;">2023/10</td>
-<td>Our student Jun Wang won three honors from NUAA: "Outstanding Individual in Scientific Research and Innovation" (科研创新先进个人), "Outstanding Graduate Student" (三好研究生), and "Outstanding Individual in Social Activities" (社会活动先进个人).
-</td>
-</tr>
-
-<tr>
-<td style="width:125px;">2023/08</td>
-<td>One paper accepted at <a href="https://issre.github.io/2023/">ISSRE 2023</a>. Congrats to Huashan!
-</td>
-</tr>
-
-<tr>
-<td style="width:125px;">2023/07</td>
-<td>One paper accepted at <a href="https://2023.esec-fse.org/">ESEC/FSE 2023</a>. Congrats to Jun!
-</td>
-</tr>
-
-
-
-<tr>
-<td style="width:125px;">2023/05</td>
-<td>Invited to serve on the Program Committee for <a href="https://issre.github.io/2023/">ISSRE 2023</a> and <a href="https://qrs23.techconf.org/">QRS 2023</a>. Please consider submitting your work!
-</td>
-</tr>
-
-<tr>
-<td style="width:125px;">2023/04</td>
-<td>Invited to serve as a master's thesis review expert for the <a href="http://www.cdgdc.edu.cn">China Academic Degrees and Graduate Education Development Center (CDGDC)</a> (教育部学位与研究生教育发展中心硕士论文评审专家).
-</td>
-</tr>
-
-
-<tr>
-<td style="width:125px;">2022/10</td>
-<td>Our student Jianfei received a grant from the NUAA 2022 Graduate Research and Practice Innovation Program. Congrats to Jianfei!
-</td>
-</tr>
-
-
-<tr>
-<td style="width:125px;">2022/07</td>
-<td>One paper accepted at <a href="https://issre2022.github.io/">ISSRE 2022</a>. Congrats to Jianfei!
-</td>
-</tr>
-
-<tr>
-<td style="width:125px;">2022/07</td>
-<td>Invited to serve on the Program Committee for <a href="https://qrs22.techconf.org/">QRS 2022</a>.
-</td>
-</tr>
-
-
-<tr>
-<td style="width:125px;">2022/03</td>
-<td>Invited to serve on the Program Committee for <a href="https://issre2022.github.io/">ISSRE 2022</a>.
-</td>
-</tr>
-
-<tr>
-<td style="width:125px;">2021/08</td>
-<td>One paper accepted at <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=24">IEEE TRel</a>.
-</td>
-</tr>
-
-
-<tr>
-<td style="width:125px;">2021/07</td>
-<td>One paper accepted at <a href="http://2021.issre.net/">ISSRE 2021</a>.
-</td>
-</tr>
-
-<tr>
-<td style="width:125px;">2021/05</td>
-<td>One paper accepted at <a href="https://2021.esec-fse.org/">ESEC/FSE 2021</a>.
-</td>
-</tr>
-
-<tr>
-<td style="width:125px;">2021/04</td>
-<td>Invited to serve on the Program Committee for <a href="https://qrs21.techconf.org/">QRS 2021</a>. Please consider submitting your work!
-</td>
-</tr>
-
-
-<tr>
-<td style="width:125px;">2021/02</td>
-<td>Invited to serve on the Program Committee for <a href="http://2021.issre.net/">ISSRE 2021</a>. Please consider submitting your work!
-</td>
-</tr>
-
-
-<tr>
-<td style="width:125px;">2020/12</td>
-<td>I was invited to serve as an <a href="http://www.nsfc.gov.cn/">NSFC</a> reviewer.
-</td>
-</tr>
-
-<tr>
-<td style="width:125px;">2020/11</td>
-<td>I was elected as a member of <a href="https://www.ccf.org.cn/Chapters/TC/TC_Listing/TCSS/">CCF TCSS</a> (Systems Software).
-</td>
-</tr>
-
-
-<tr>
-<td style="width:125px;">2020/09</td>
-<td>I received the Young Scientists Fund of the National Natural Science Foundation of China.
-</td>
-</tr>
-
-
-<tr>
-<td style="width:125px;">2020/08</td>
-<td>I received the Young Scientists Fund of the Natural Science Foundation of Jiangsu Province.
-</td>
-</tr>
-
-  
-<tr>
-<td style="width:125px;">2020/08</td>
-<td>Two papers accepted at <a href="http://2020.issre.net/">ISSRE 2020</a>.
-</td>
-</tr>
-
-<tr>
-<td style="width:125px;">2020/06</td>
-<td>I received the Open Research Fund of State Key Laboratory of Novel Software Technology.
-</td>
-</tr>
-
-
-<tr>
-<td style="width:125px;">2020/01</td>
-<td>I joined Nanjing University of Aeronautics and Astronautics as an Assistant Professor.
-</td>
-</tr>
-
-
-</table>
-</div>
-
-
-
-
-<div class="container" id="nav-publications">
-<h2>Publications&nbsp;(<a href="https://scholar.google.com/citations?user=8t8uuy8AAAAJ&hl=en">Google Scholar</a>, <a href="https://dblp.org/pid/191/6618.html">DBLP</a>)</h2> 
-<table style="border-collapse:separate; border-spacing:0px 7.5px;">
-
-<tr>
-<td style="width:125px;"><a href="https://dl.acm.org/journal/tosem"><b>TOSEM'26</b></a></td>
-<td>Huashan Lei, <b>Guanping Xiao</b>, Yepang Liu, and Zheng Zheng. PCREQ: Automated Inference of Compatible Requirements for Python Third-party Library Upgrades. <i>ACM Transactions on Software Engineering and Methodology</i> [<a href="https://github.com/pcart-tools/pcreq">artifacts</a>]
-</td>
-</tr>
-
-<tr>
-<td style="width:125px;"><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=32"><b>TSE'25</b></a></td>
-<td>Shuai Zhang, <b>Guanping Xiao</b>, Jun Wang, Huashan Lei, Gangqiang He, Yepang Liu, and Zheng Zheng. <a href="https://arxiv.org/pdf/2406.03839">PCART: Automated Repair of Python API Parameter Compatibility Issues</a>. <i>IEEE Transactions on Software Engineering</i> [<a href="https://github.com/pcart-tools">artifacts</a>]
-</td>
-</tr>
-
-<tr>
-<td style="width:125px;"><a href="https://issre.github.io/2024/program_fast-abstracts.html"><b>ISSRE'24-FA</b></a></td>
-<td>Shuai Zhang, Gangqiang He, and <b>Guanping Xiao</b>. <a href="publications/ISSRE24.pdf">Coding Pitfalls: Demystifying the Potential API Compatibility Risk of Variadic Parameters in Python</a>. <i>IEEE 35th International Symposium on Software Reliability Engineering, fast abstracts track</i> [<a href="files/ISSRE24slides.pdf">slides</a>][<a href="https://github.com/pcart-tools/VPPDetector">artifacts</a>]</td>
-</tr>
-
-<tr>
-<td style="width:125px;"><a href="https://conf.researchr.org/home/internetware-2024"><b>Internetware'24</b></a></td>
-<td>Wenjun Liang and <b>Guanping Xiao</b>. <a href="publications/Internetware24.pdf">An Exploratory Evaluation of Large Language Models Using Empirical Software Engineering Tasks</a>. <i>15th Asia-Pacific Symposium on Internetware</i> [<a href="files/Internetware24slides.pdf">slides</a>][<a href="https://github.com/EMSEBench">artifacts</a>]</td>
-</tr>
-
-<tr>
-<td style="width:125px;"><a href="https://www.sciencedirect.com/journal/journal-of-systems-and-software"><b>JSS'24</b></a></td>
-<td>Jianfei Zhu, <b>Guanping Xiao</b>, Zheng Zheng, and Yulei Sui. <a href="publications/JSS24.pdf">Deep Semi-Supervised Learning for Recovering Traceability Links between Issues and Commits</a>. <i>Journal of Systems and Software</i> [<a href="https://github.com/DSSLink">artifacts</a>] </td>
-</tr>
-
-<tr>
-<td style="width:125px;"><a href="https://conf.researchr.org/home/icse-2024"><b>ICSE'24</b></a></td>
-<td>Dinghua Wang, Shuqing Li, <b>Guanping Xiao</b>, Yepang Liu, Yulei Sui, Pinjia He, and Michael R. Lyu. <a href="publications/ICSE24.pdf">An Exploratory Investigation of Log Anomalies in Unmanned Aerial Vehicles</a>. <i>46th IEEE/ACM International Conference on Software Engineering</i> [<a href="https://zenodo.org/records/10199597">artifacts</a>]</td>
-</tr>
-
-
-<tr>
-<td style="width:125px;"><a href="https://issre.github.io/2023/"><b>ISSRE'23</b></a></td>
-<td>Huashan Lei, Shuai Zhang, Jun Wang, <b>Guanping Xiao</b>, Yepang Liu, and Yulei Sui. <a href="publications/ISSRE23.pdf">Why Do Deep Learning Projects Differ in Compatible Framework Versions? An Exploratory Study</a>. <i>IEEE 34th International Symposium on Software Reliability Engineering</i> [<a href="files/ISSRE23slides.pdf">slides</a>][<a href="https://zenodo.org/record/8266949">artifacts</a>]</td>
-</tr>
-
-
-<tr>
-<td style="width:125px;"><a href="https://2023.esec-fse.org/"><b>FSE'23</b></a></td>
-<td>Jun Wang, <b>Guanping Xiao</b>, Shuai Zhang, Huashan Lei, Yepang Liu, and Yulei Sui. <a href="publications/FSE23.pdf">Compatibility Issues in Deep Learning Systems: Problems and Opportunities</a>. <i>31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering</i> [<a href="files/FSE23slides.pdf">slides</a>][<a href="https://zenodo.org/record/8207011">artifacts</a>]</td>
-</tr>
-
-
-<tr>
-<td style="width:125px;"><a href="https://issre2022.github.io/"><b>ISSRE'22</b></a></td>
-<td>Jianfei Zhu, <b>Guanping Xiao</b>, Zheng Zheng, and Yulei Sui. <a href="publications/ISSRE22.pdf">Enhancing Traceability Link Recovery with Unlabeled Data</a>. <i>IEEE 33rd International Symposium on Software Reliability Engineering</i> [<a href="files/ISSRE22slides.pdf">slides</a>][<a href="https://github.com/TraceFUN">artifacts</a>] </td>
-</tr>
-
-
-<tr>
-<td style="width:125px;"><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=24"><b>TRel'21</b></a></td>
-<td>Xiaoting Du, Zheng Zheng, <b>Guanping Xiao</b>, Zenghui Zhou, and Kishor S. Trivedi. <a href="publications/TRel21.pdf">DeepSIM: Deep Semantic Information-Based Automatic Mandelbug Classification</a>. <i>IEEE Transactions on Reliability</i> [<a href="https://github.com/xiaotingdu/DeepSIM">artifacts</a>] </td>
-</tr>
-
-
-<tr>
-<td style="width:125px;"><a href="http://2021.issre.net/"><b>ISSRE'21</b></a></td>
-<td><b>Guanping Xiao</b>, Jun Liu, Zheng Zheng, and Yulei Sui. <a href="publications/ISSRE21.pdf">Nondeterministic Impact of CPU Multithreading on Training Deep Learning Systems</a>. <i>IEEE 32nd International Symposium on Software Reliability Engineering</i> [<a href="https://guanpingxiao.github.io/files/ISSRE21slides.pdf">slides</a>][<a href="https://github.com/DeterministicDeepLearning">artifacts</a>] </td>
-</tr>
-
-
-<tr>
-<td style="width:125px;"><a href="https://2021.esec-fse.org/"><b>FSE'21</b></a></td>
-<td>Dinghua Wang, Shuqing Li, <b>Guanping Xiao</b>, Yepang Liu, and Yulei Sui. <a href="publications/FSE21.pdf">An Exploratory Study of Autopilot Software Bugs in Unmanned Aerial Vehicles</a>. <i>29th ACM Joint European Software
-Engineering Conference and Symposium on the Foundations of Software Engineering</i> [<a href="https://doi.org/10.5281/zenodo.4898868">artifacts</a>]</td>
-</tr>
- 
-<tr>
-<td style="width:125px;"><a href="http://2020.issre.net/"><b>ISSRE'20</b></a></td>
-<td><b>Guanping Xiao</b>, Xiaoting Du, Yulei Sui, and Tao Yue. <a href="publications/ISSRE20a.pdf">HINDbr: Heterogeneous Information Network Based Duplicate Bug Report Prediction</a>. <i>IEEE 31st International Symposium on Software Reliability Engineering</i> [<a href="files/ISSRE20slides.pdf">slides</a>][<a href="https://github.com/hindbr">artifacts</a>] </td>
-</tr>
-
-
-<tr>
-<td style="width:125px;"><a href="http://2020.issre.net/"><b>ISSRE'20</b></a></td>
-<td>Xiaoting Du, <b>Guanping Xiao</b>, and Yulei Sui. <a href="publications/ISSRE20b.pdf">Fault Triggers in the TensorFlow Framework: An Experience Report</a>. <i>IEEE 31st International Symposium on Software Reliability Engineering</i> [<a href="https://github.com/xiaotingdu/TensorFlowFaultTriggers">artifacts</a>] <span style="color:red;"> (One of the Three Best Paper Nominees) </span></td>
-</tr>
-  
-    
-<tr>
-<td style="width:125px;"><a href="https://formal-analysis.com/apsec/2020/"><b>APSEC'20</b></a></td>
-<td>Yanxin Zhang, <b>Guanping Xiao</b>, Zheng Zheng, Tianqing Zhu, Ivor W. Tsang, and Yulei Sui. <a href="publications/APSEC20.pdf">An Empirical Study of Code Deobfuscations on Detecting Obfuscated Android Piggybacked Apps</a>. <i>27th Asia-Pacific Software Engineering Conference</i> </td>
-</tr>  
-
-
-<tr>
-<td style="width:125px;"><a href="https://link.springer.com/journal/11219"><b>SQJ'19</b></a></td>
-<td>Xiaoting Du, Zenghui Zhou, Beibei Yin, and <b>Guanping Xiao</b>. <a href="publications/SQJ19.pdf">Cross-project Bug Type Prediction Based on Transfer Learning</a>. <i>Software Quality Journal</i> </td>
-</tr>
-
-
-
-<tr>
-<td style="width:125px;"><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=24"><b>TRel'19</b></a></td>
-<td><b>Guanping Xiao</b>, Zheng Zheng, Beibei Yin, Kishor S. Trivedi, Xiaoting Du, and Kai-Yuan Cai. <a href="publications/TRel19b.pdf">An Empirical Study of Fault Triggers in the Linux Operating System: An Evolutionary Perspective</a>. <i>IEEE Transactions on Reliability</i> [<a href="data/linux.xlsx">artifacts</a>]</td>
-</tr>
-
-<tr>
-<td style="width:125px;"><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=24"><b>TRel'19</b></a></td>
-<td><b>Guanping Xiao</b>, Zheng Zheng, Bo Jiang, and Yulei Sui. <a href="publications/TRel19a.pdf">An Empirical Study of Regression Bug Chains in Linux</a>. <i>IEEE Transactions on Reliability</i> [<a href="data/linux_rgbugs.xlsx">artifacts</a>]</td>
-</tr> 
-
-<tr>
-<td style="width:125px;"><a href="https://www.journals.elsevier.com/chinese-journal-of-aeronautics"><b>CJA'18</b></a></td>
-<td>Zheng Zheng and <b>Guanping Xiao</b>. <a href="publications/CJA18.pdf">Evolution Analysis of a UAV Real-time Operating System from a Network Perspective</a>. <i>Chinese Journal of Aeronautics</i></td>
-</tr>
-
-<tr>
-<td style="width:125px;"><a href="http://2017.issre.net/"><b>ISSRE'17</b></a></td>
-<td><b>Guanping Xiao</b>, Zheng Zheng, Beibei Yin, Kishor S. Trivedi, Xiaoting Du, and Kai-Yuan Cai. <a href="publications/ISSRE17.pdf">Experience Report: Fault Triggers in Linux Operating System: From Evolution Perspective</a>. <i>IEEE 28th International Symposium on Software Reliability Engineering</i> [<a href="files/ISSRE17slides.pdf">slides</a>][<a href="data/linux.xlsx">artifacts</a>]</td>
-</tr>
-
-<tr>
-<td style="width:125px;"><a href="http://2017.issre.net/"><b>ISSREW'17</b></a></td>
-<td>Xiaoting Du, Zheng Zheng, <b>Guanping Xiao</b>, and Beibei Yin. <a href="publications/ISSREW17.pdf">The Automatic Classification of Fault Trigger Based Bug Report</a>. <i>IEEE 28th International Symposium on Software Reliability Engineering Workshops</i> </td>
-</tr>
-
-<tr>
-<td style="width:125px;"><a href="https://www.journals.elsevier.com/physica-a-statistical-mechanics-and-its-applications"><b>PhysicaA'16</b></a></td>
-<td><b>Guanping Xiao</b>, Zheng Zheng, and Haoqin Wang. <a href="publications/PhysicaA16.pdf">Evolution of Linux Operating System Network</a>. <i>Physica A: Statistical Mechanics and its Applications</i></td>
-</tr>
-
-<tr>
-<td style="width:125px;"><a href="http://software.nju.edu.cn/ise/sate/en/index.html"><b>SATE'16</b></a></td>
-<td>Haoqin Wang and <b>Guanping Xiao</b>. <a href="publications/SATE16.pdf">Analysis of the Runtime Linux Operating System as a Complex Weighted Network</a>. <i>International Conference on Software Analysis, Testing and Evolution</i></td>
-</tr>
-
-<tr>
-<td style="width:125px;"><a href="https://www.journals.elsevier.com/physica-a-statistical-mechanics-and-its-applications"><b>PhysicaA'15</b></a></td>
-<td>Haoqin Wang, Zhen Chen, <b>Guanping Xiao</b>, and Zheng Zheng. <a href="publications/PhysicaA15.pdf">Network of Networks in Linux Operating System</a>. <i>Physica A: Statistical Mechanics and its Applications</i></td>
-</tr>
-
-
-</table>
-</div>
-
-
-<div class="container" id="nav-students">
+<ul class="news-list" id="news-list">
+
+<li class="news-item">
+<span class="news-date">2026/03</span>
+<span class="news-content">Our <a href="https://github.com/pcart-tools/pcreq">PCREQ</a> paper has been accepted by <a href="https://dl.acm.org/journal/tosem">ACM TOSEM</a>. Congrats to Huashan!</span>
+</li>
+
+<li class="news-item">
+<span class="news-date">2026/03</span>
+<span class="news-content">Our student, Huashan Lei, has been awarded the Outstanding Graduate Student honor (优秀毕业研究生). Congrats!</span>
+</li>
+
+<li class="news-item">
+<span class="news-date">2025/12</span>
+<span class="news-content">Our <a href="https://github.com/pcart-tools">PCART</a> paper has been accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=32">IEEE TSE</a>. Congrats to Shuai!</span>
+</li>
+
+<li class="news-item">
+<span class="news-date">2025/08</span>
+<span class="news-content">Our tool, <a href="https://github.com/pcart-tools/pcreq">PCREQ</a>, an automated tool for inferring compatible requirements for Python third-party library (TPL) upgrades, has been released. Please try this tool and give us feedback and suggestions! Relevant paper can be found <a href="https://arxiv.org/abs/2508.02023">here</a>.</span>
+</li>
+
+<li class="news-item">
+<span class="news-date">2025/03</span>
+<span class="news-content">Our students, Shuai Zhang and Jun Wang, have been awarded the Outstanding Graduate Student honor (优秀毕业研究生). Congrats!</span>
+</li>
+
+<li class="news-item">
+<span class="news-date">2024/11</span>
+<span class="news-content">Invited to serve on the Program Committee for the FSE Student Research Competition 2025 (<a href="https://conf.researchr.org/track/fse-2025/fse-2025-student-research-competition">FSE SRC 2025</a>). Undergraduate and graduate students are encouraged to participate!</span>
+</li>
+
+<li class="news-item">
+<span class="news-date">2024/11</span>
+<span class="news-content">Our student Jun Wang won the "National Scholarship for Graduate Students" (硕士研究生国家奖学金). Congrats!</span>
+</li>
+
+<li class="news-item">
+<span class="news-date">2024/10</span>
+<span class="news-content">Our students Shuai Zhang and Huashan Lei won two honors from NUAA: "Outstanding Individual in Scientific Research and Innovation" (科研创新先进个人) and "Outstanding Graduate Student" (三好研究生). Congrats!</span>
+</li>
+
+<li class="news-item">
+<span class="news-date">2024/08</span>
+<span class="news-content">Our work on Python API variadic parameters has been accepted by <a href="https://issre.github.io/2024/">ISSRE 2024</a> fast abstracts track. Congrats to Shuai!</span>
+</li>
+
+<li class="news-item">
+<span class="news-date">2024/07</span>
+<span class="news-content">I have been promoted to Associate Professor.</span>
+</li>
+
+<li class="news-item">
+<span class="news-date">2024/06</span>
+<span class="news-content">Our tool, <a href="https://github.com/pcart-tools">PCART</a>, a precise and fully automated detection and repair tool for Python API parameter compatibility issues, has been released. Please try this tool and give us feedback and suggestions! Relevant paper can be found <a href="https://arxiv.org/abs/2406.03839">here</a>.</span>
+</li>
+
+<li class="news-item">
+<span class="news-date">2024/06</span>
+<span class="news-content">Our work on LLM evaluation using empirical software engineering tasks has been accepted by <a href="https://conf.researchr.org/home/internetware-2024">Internetware 2024</a>. Congrats to Wenjun!</span>
+</li>
+
+<li class="news-item">
+<span class="news-date">2024/03</span>
+<span class="news-content">Please submit your high-quality work to <a href="https://issre.github.io/2024/">ISSRE 2024</a>, <a href="https://conf.researchr.org/home/internetware-2024">Internetware 2024</a>, and <a href="https://qrs24.techconf.org/">QRS 2024</a>!</span>
+</li>
+
+<li class="news-item">
+<span class="news-date">2024/02</span>
+<span class="news-content">Our work on traceability link recovery using deep semi-supervised learning techniques has been accepted by <a href="https://www.sciencedirect.com/journal/journal-of-systems-and-software">JSS</a>. Congrats to Jianfei!</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2023/12</span>
+<span class="news-content">Our UAV log anomaly analysis work has been accepted by <a href="https://conf.researchr.org/home/icse-2024">ICSE 2024</a>.</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2023/11</span>
+<span class="news-content">Our student Huashan Lei won Master's Graduate Special Freshman Scholarship (Second Prize) of NUAA (2023级硕士研究生新生特别奖学金二等奖).</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2023/10</span>
+<span class="news-content">Our student Jun Wang won three honors from NUAA: "Outstanding Individual in Scientific Research and Innovation" (科研创新先进个人), "Outstanding Graduate Student" (三好研究生), and "Outstanding Individual in Social Activities" (社会活动先进个人).</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2023/08</span>
+<span class="news-content">One paper accepted at <a href="https://issre.github.io/2023/">ISSRE 2023</a>. Congrats to Huashan!</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2023/07</span>
+<span class="news-content">One paper accepted at <a href="https://2023.esec-fse.org/">ESEC/FSE 2023</a>. Congrats to Jun!</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2023/05</span>
+<span class="news-content">Invited to serve on the Program Committee for <a href="https://issre.github.io/2023/">ISSRE 2023</a> and <a href="https://qrs23.techconf.org/">QRS 2023</a>. Please consider submitting your work!</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2023/04</span>
+<span class="news-content">Invited to serve as a master's thesis review expert for the <a href="http://www.cdgdc.edu.cn">China Academic Degrees and Graduate Education Development Center (CDGDC)</a> (教育部学位与研究生教育发展中心硕士论文评审专家).</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2022/10</span>
+<span class="news-content">Our student Jianfei received a grant from the NUAA 2022 Graduate Research and Practice Innovation Program. Congrats to Jianfei!</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2022/07</span>
+<span class="news-content">One paper accepted at <a href="https://issre2022.github.io/">ISSRE 2022</a>. Congrats to Jianfei!</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2022/07</span>
+<span class="news-content">Invited to serve on the Program Committee for <a href="https://qrs22.techconf.org/">QRS 2022</a>.</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2022/03</span>
+<span class="news-content">Invited to serve on the Program Committee for <a href="https://issre2022.github.io/">ISSRE 2022</a>.</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2021/08</span>
+<span class="news-content">One paper accepted at <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=24">IEEE TRel</a>.</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2021/07</span>
+<span class="news-content">One paper accepted at <a href="http://2021.issre.net/">ISSRE 2021</a>.</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2021/05</span>
+<span class="news-content">One paper accepted at <a href="https://2021.esec-fse.org/">ESEC/FSE 2021</a>.</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2021/04</span>
+<span class="news-content">Invited to serve on the Program Committee for <a href="https://qrs21.techconf.org/">QRS 2021</a>. Please consider submitting your work!</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2021/02</span>
+<span class="news-content">Invited to serve on the Program Committee for <a href="http://2021.issre.net/">ISSRE 2021</a>. Please consider submitting your work!</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2020/12</span>
+<span class="news-content">I was invited to serve as an <a href="http://www.nsfc.gov.cn/">NSFC</a> reviewer.</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2020/11</span>
+<span class="news-content">I was elected as a member of <a href="https://www.ccf.org.cn/Chapters/TC/TC_Listing/TCSS/">CCF TCSS</a> (Systems Software).</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2020/09</span>
+<span class="news-content">I received the Young Scientists Fund of the National Natural Science Foundation of China.</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2020/08</span>
+<span class="news-content">I received the Young Scientists Fund of the Natural Science Foundation of Jiangsu Province.</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2020/08</span>
+<span class="news-content">Two papers accepted at <a href="http://2020.issre.net/">ISSRE 2020</a>.</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2020/06</span>
+<span class="news-content">I received the Open Research Fund of State Key Laboratory of Novel Software Technology.</span>
+</li>
+
+<li class="news-item news-old">
+<span class="news-date">2020/01</span>
+<span class="news-content">I joined Nanjing University of Aeronautics and Astronautics as an Assistant Professor.</span>
+</li>
+
+</ul>
+<button class="news-toggle" id="news-toggle">Show older news</button>
+</section>
+
+
+<section id="publications" class="section">
+<h2>Publications&nbsp;(<a href="https://scholar.google.com/citations?user=8t8uuy8AAAAJ&hl=en">Google Scholar</a>, <a href="https://dblp.org/pid/191/6618.html">DBLP</a>)</h2>
+
+<ul class="pub-list">
+
+<li class="pub-item">
+<span class="pub-venue"><a href="https://dl.acm.org/journal/tosem"><b>TOSEM'26</b></a></span>
+<span class="pub-detail">Huashan Lei, <b>Guanping Xiao</b>, Yepang Liu, and Zheng Zheng. PCREQ: Automated Inference of Compatible Requirements for Python Third-party Library Upgrades. <i>ACM Transactions on Software Engineering and Methodology</i> [<a href="https://github.com/pcart-tools/pcreq">artifacts</a>]</span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=32"><b>TSE'25</b></a></span>
+<span class="pub-detail">Shuai Zhang, <b>Guanping Xiao</b>, Jun Wang, Huashan Lei, Gangqiang He, Yepang Liu, and Zheng Zheng. <a href="https://arxiv.org/pdf/2406.03839">PCART: Automated Repair of Python API Parameter Compatibility Issues</a>. <i>IEEE Transactions on Software Engineering</i> [<a href="https://github.com/pcart-tools">artifacts</a>]</span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="https://issre.github.io/2024/program_fast-abstracts.html"><b>ISSRE'24-FA</b></a></span>
+<span class="pub-detail">Shuai Zhang, Gangqiang He, and <b>Guanping Xiao</b>. <a href="publications/ISSRE24.pdf">Coding Pitfalls: Demystifying the Potential API Compatibility Risk of Variadic Parameters in Python</a>. <i>IEEE 35th International Symposium on Software Reliability Engineering, fast abstracts track</i> [<a href="files/ISSRE24slides.pdf">slides</a>][<a href="https://github.com/pcart-tools/VPPDetector">artifacts</a>]</span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="https://conf.researchr.org/home/internetware-2024"><b>Internetware'24</b></a></span>
+<span class="pub-detail">Wenjun Liang and <b>Guanping Xiao</b>. <a href="publications/Internetware24.pdf">An Exploratory Evaluation of Large Language Models Using Empirical Software Engineering Tasks</a>. <i>15th Asia-Pacific Symposium on Internetware</i> [<a href="files/Internetware24slides.pdf">slides</a>][<a href="https://github.com/EMSEBench">artifacts</a>]</span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="https://www.sciencedirect.com/journal/journal-of-systems-and-software"><b>JSS'24</b></a></span>
+<span class="pub-detail">Jianfei Zhu, <b>Guanping Xiao</b>, Zheng Zheng, and Yulei Sui. <a href="publications/JSS24.pdf">Deep Semi-Supervised Learning for Recovering Traceability Links between Issues and Commits</a>. <i>Journal of Systems and Software</i> [<a href="https://github.com/DSSLink">artifacts</a>]</span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="https://conf.researchr.org/home/icse-2024"><b>ICSE'24</b></a></span>
+<span class="pub-detail">Dinghua Wang, Shuqing Li, <b>Guanping Xiao</b>, Yepang Liu, Yulei Sui, Pinjia He, and Michael R. Lyu. <a href="publications/ICSE24.pdf">An Exploratory Investigation of Log Anomalies in Unmanned Aerial Vehicles</a>. <i>46th IEEE/ACM International Conference on Software Engineering</i> [<a href="https://zenodo.org/records/10199597">artifacts</a>]</span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="https://issre.github.io/2023/"><b>ISSRE'23</b></a></span>
+<span class="pub-detail">Huashan Lei, Shuai Zhang, Jun Wang, <b>Guanping Xiao</b>, Yepang Liu, and Yulei Sui. <a href="publications/ISSRE23.pdf">Why Do Deep Learning Projects Differ in Compatible Framework Versions? An Exploratory Study</a>. <i>IEEE 34th International Symposium on Software Reliability Engineering</i> [<a href="files/ISSRE23slides.pdf">slides</a>][<a href="https://zenodo.org/record/8266949">artifacts</a>]</span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="https://2023.esec-fse.org/"><b>FSE'23</b></a></span>
+<span class="pub-detail">Jun Wang, <b>Guanping Xiao</b>, Shuai Zhang, Huashan Lei, Yepang Liu, and Yulei Sui. <a href="publications/FSE23.pdf">Compatibility Issues in Deep Learning Systems: Problems and Opportunities</a>. <i>31st ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering</i> [<a href="files/FSE23slides.pdf">slides</a>][<a href="https://zenodo.org/record/8207011">artifacts</a>]</span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="https://issre2022.github.io/"><b>ISSRE'22</b></a></span>
+<span class="pub-detail">Jianfei Zhu, <b>Guanping Xiao</b>, Zheng Zheng, and Yulei Sui. <a href="publications/ISSRE22.pdf">Enhancing Traceability Link Recovery with Unlabeled Data</a>. <i>IEEE 33rd International Symposium on Software Reliability Engineering</i> [<a href="files/ISSRE22slides.pdf">slides</a>][<a href="https://github.com/TraceFUN">artifacts</a>]</span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=24"><b>TRel'21</b></a></span>
+<span class="pub-detail">Xiaoting Du, Zheng Zheng, <b>Guanping Xiao</b>, Zenghui Zhou, and Kishor S. Trivedi. <a href="publications/TRel21.pdf">DeepSIM: Deep Semantic Information-Based Automatic Mandelbug Classification</a>. <i>IEEE Transactions on Reliability</i> [<a href="https://github.com/xiaotingdu/DeepSIM">artifacts</a>]</span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="http://2021.issre.net/"><b>ISSRE'21</b></a></span>
+<span class="pub-detail"><b>Guanping Xiao</b>, Jun Liu, Zheng Zheng, and Yulei Sui. <a href="publications/ISSRE21.pdf">Nondeterministic Impact of CPU Multithreading on Training Deep Learning Systems</a>. <i>IEEE 32nd International Symposium on Software Reliability Engineering</i> [<a href="https://guanpingxiao.github.io/files/ISSRE21slides.pdf">slides</a>][<a href="https://github.com/DeterministicDeepLearning">artifacts</a>]</span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="https://2021.esec-fse.org/"><b>FSE'21</b></a></span>
+<span class="pub-detail">Dinghua Wang, Shuqing Li, <b>Guanping Xiao</b>, Yepang Liu, and Yulei Sui. <a href="publications/FSE21.pdf">An Exploratory Study of Autopilot Software Bugs in Unmanned Aerial Vehicles</a>. <i>29th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering</i> [<a href="https://doi.org/10.5281/zenodo.4898868">artifacts</a>]</span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="http://2020.issre.net/"><b>ISSRE'20</b></a></span>
+<span class="pub-detail"><b>Guanping Xiao</b>, Xiaoting Du, Yulei Sui, and Tao Yue. <a href="publications/ISSRE20a.pdf">HINDbr: Heterogeneous Information Network Based Duplicate Bug Report Prediction</a>. <i>IEEE 31st International Symposium on Software Reliability Engineering</i> [<a href="files/ISSRE20slides.pdf">slides</a>][<a href="https://github.com/hindbr">artifacts</a>]</span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="http://2020.issre.net/"><b>ISSRE'20</b></a></span>
+<span class="pub-detail">Xiaoting Du, <b>Guanping Xiao</b>, and Yulei Sui. <a href="publications/ISSRE20b.pdf">Fault Triggers in the TensorFlow Framework: An Experience Report</a>. <i>IEEE 31st International Symposium on Software Reliability Engineering</i> [<a href="https://github.com/xiaotingdu/TensorFlowFaultTriggers">artifacts</a>] <span style="color:red;">(One of the Three Best Paper Nominees)</span></span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="https://formal-analysis.com/apsec/2020/"><b>APSEC'20</b></a></span>
+<span class="pub-detail">Yanxin Zhang, <b>Guanping Xiao</b>, Zheng Zheng, Tianqing Zhu, Ivor W. Tsang, and Yulei Sui. <a href="publications/APSEC20.pdf">An Empirical Study of Code Deobfuscations on Detecting Obfuscated Android Piggybacked Apps</a>. <i>27th Asia-Pacific Software Engineering Conference</i></span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="https://link.springer.com/journal/11219"><b>SQJ'19</b></a></span>
+<span class="pub-detail">Xiaoting Du, Zenghui Zhou, Beibei Yin, and <b>Guanping Xiao</b>. <a href="publications/SQJ19.pdf">Cross-project Bug Type Prediction Based on Transfer Learning</a>. <i>Software Quality Journal</i></span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=24"><b>TRel'19</b></a></span>
+<span class="pub-detail"><b>Guanping Xiao</b>, Zheng Zheng, Beibei Yin, Kishor S. Trivedi, Xiaoting Du, and Kai-Yuan Cai. <a href="publications/TRel19b.pdf">An Empirical Study of Fault Triggers in the Linux Operating System: An Evolutionary Perspective</a>. <i>IEEE Transactions on Reliability</i> [<a href="data/linux.xlsx">artifacts</a>]</span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=24"><b>TRel'19</b></a></span>
+<span class="pub-detail"><b>Guanping Xiao</b>, Zheng Zheng, Bo Jiang, and Yulei Sui. <a href="publications/TRel19a.pdf">An Empirical Study of Regression Bug Chains in Linux</a>. <i>IEEE Transactions on Reliability</i> [<a href="data/linux_rgbugs.xlsx">artifacts</a>]</span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="https://www.journals.elsevier.com/chinese-journal-of-aeronautics"><b>CJA'18</b></a></span>
+<span class="pub-detail">Zheng Zheng and <b>Guanping Xiao</b>. <a href="publications/CJA18.pdf">Evolution Analysis of a UAV Real-time Operating System from a Network Perspective</a>. <i>Chinese Journal of Aeronautics</i></span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="http://2017.issre.net/"><b>ISSRE'17</b></a></span>
+<span class="pub-detail"><b>Guanping Xiao</b>, Zheng Zheng, Beibei Yin, Kishor S. Trivedi, Xiaoting Du, and Kai-Yuan Cai. <a href="publications/ISSRE17.pdf">Experience Report: Fault Triggers in Linux Operating System: From Evolution Perspective</a>. <i>IEEE 28th International Symposium on Software Reliability Engineering</i> [<a href="files/ISSRE17slides.pdf">slides</a>][<a href="data/linux.xlsx">artifacts</a>]</span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="http://2017.issre.net/"><b>ISSREW'17</b></a></span>
+<span class="pub-detail">Xiaoting Du, Zheng Zheng, <b>Guanping Xiao</b>, and Beibei Yin. <a href="publications/ISSREW17.pdf">The Automatic Classification of Fault Trigger Based Bug Report</a>. <i>IEEE 28th International Symposium on Software Reliability Engineering Workshops</i></span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="https://www.journals.elsevier.com/physica-a-statistical-mechanics-and-its-applications"><b>PhysicaA'16</b></a></span>
+<span class="pub-detail"><b>Guanping Xiao</b>, Zheng Zheng, and Haoqin Wang. <a href="publications/PhysicaA16.pdf">Evolution of Linux Operating System Network</a>. <i>Physica A: Statistical Mechanics and its Applications</i></span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="http://software.nju.edu.cn/ise/sate/en/index.html"><b>SATE'16</b></a></span>
+<span class="pub-detail">Haoqin Wang and <b>Guanping Xiao</b>. <a href="publications/SATE16.pdf">Analysis of the Runtime Linux Operating System as a Complex Weighted Network</a>. <i>International Conference on Software Analysis, Testing and Evolution</i></span>
+</li>
+
+<li class="pub-item">
+<span class="pub-venue"><a href="https://www.journals.elsevier.com/physica-a-statistical-mechanics-and-its-applications"><b>PhysicaA'15</b></a></span>
+<span class="pub-detail">Haoqin Wang, Zhen Chen, <b>Guanping Xiao</b>, and Zheng Zheng. <a href="publications/PhysicaA15.pdf">Network of Networks in Linux Operating System</a>. <i>Physica A: Statistical Mechanics and its Applications</i></span>
+</li>
+
+</ul>
+</section>
+
+
+<section id="team" class="section">
 <h2>Team</h2>
-<table>
 
-<tr>
-<td><b>Current students:</b>
-</td>
-</tr>
+<p class="team-category">Current students:</p>
+<ul class="team-list">
 
+<li><span class="team-name">Gangqiang He</span>&emsp;Master student&emsp;Jun. 2024 - now</li>
+<li><span class="team-name">Yuanrong Huang</span>&emsp;Master student&emsp;May. 2025 - now</li>
+</ul>
 
+<p class="team-category">Current undergraduate thesis students:</p>
+<ul class="team-list">
+<li><span class="team-name">Yuxiang Tang</span>&emsp;Undergraduate thesis student&emsp;Nov. 2025 - now</li>
+<li><span class="team-name">Qingyun Li</span>&emsp;Undergraduate thesis student&emsp;Nov. 2025 - now</li>
+<li><span class="team-name">Qian Shang</span>&emsp;Undergraduate thesis student&emsp;Nov. 2025 - now</li>
+<li><span class="team-name">Yuhao Wu</span>&emsp;Undergraduate thesis student&emsp;Nov. 2025 - now</li>
+<li><span class="team-name">Zihao Zhu</span>&emsp;Undergraduate thesis student&emsp;Nov. 2025 - now</li>
+<li><span class="team-name">Yucheng Fang</span>&emsp;Undergraduate thesis student&emsp;Nov. 2025 - now</li>
+</ul>
 
-<tr>
-<td>&bull;&emsp;<i>Yingzhou Tao</i>&emsp;Master student&emsp; Step. 2023 - now</td>
-</tr>
+<p class="team-category">Former students:</p>
+<ul class="team-list">
+<li><span class="team-name">Huashan Lei</span>&emsp;Master student&emsp;Sep. 2023 - Mar. 2026</li>
+<li><span class="team-name">Shuai Zhang</span>&emsp;Master student&emsp;Apr. 2022 - Mar. 2025</li>
+<li><span class="team-name">Jun Wang</span>&emsp;Master student&emsp;Apr. 2022 - Mar. 2025</li>
+<li><span class="team-name">Jianfei Zhu</span>&emsp;Master student&emsp;May 2021 - Jun. 2024</li>
+<li><span class="team-name">Chenglin Xun</span>&emsp;Undergraduate thesis student&emsp;Dec. 2024 - Jun. 2025</li>
+<li><span class="team-name">Yuhan Xie</span>&emsp;Undergraduate thesis student&emsp;Dec. 2024 - Jun. 2025</li>
+<li><span class="team-name">Shunkang Liu</span>&emsp;Undergraduate thesis student&emsp;Dec. 2024 - Jun. 2025</li>
+<li><span class="team-name">Wenjun Liang</span>&emsp;Undergraduate thesis student&emsp;Dec. 2023 - Jun. 2024</li>
+<li><span class="team-name">Huashan Lei</span>&emsp;Undergraduate thesis student&emsp;Jun. 2021 - Jun. 2023</li>
 
-<tr>
-<td>&bull;&emsp;<i>Gangqiang He</i>&emsp;Master student&emsp; Jun. 2024 - now</td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;<i>Yuanrong Huang</i>&emsp;Master student&emsp; May. 2025 - now</td>
-</tr>
-
-
-<tr>
-<td>&nbsp;
-</td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;<i>Yuxiang Tang</i>&emsp;Undergraduate thesis student&emsp; Nov. 2025 - now</td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;<i>Weipeng Li</i>&emsp;Undergraduate thesis student&emsp; Nov. 2025 - now</td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;<i>Qian Shang</i>&emsp;Undergraduate thesis student&emsp; Nov. 2025 - now</td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;<i>Yuhao Wu</i>&emsp;Undergraduate thesis student&emsp; Nov. 2025 - now</td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;<i>Zihao Zhu</i>&emsp;Undergraduate thesis student&emsp; Nov. 2025 - now</td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;<i>Yucheng Fang</i>&emsp;Undergraduate thesis student&emsp; Nov. 2025 - now</td>
-</tr>
+<li><span class="team-name">Jun Liu</span>&emsp;Undergraduate thesis student&emsp;Dec. 2020 - Jun. 2021</li>
+<li><span class="team-name">Fusheng Zhang</span>&emsp;Undergraduate thesis student&emsp;Dec. 2020 - Jun. 2021</li>
+</ul>
+</section>
 
 
-
-
-
-<tr>
-<td>&nbsp;
-</td>
-</tr>
-
-<tr>
-<td><b>Former students:</b>
-</td>
-</tr>
-
-
-<tr>
-<td>&bull;&emsp;<i>Huashan Lei</i>&emsp;Master student&emsp; Step. 2023 - Mar. 2026</td>
-</tr>
-
-
-<tr>
-<td>&bull;&emsp;<i>Shuai Zhang</i>&emsp;Master student&emsp; Apr. 2022 - Mar. 2025</td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;<i>Jun Wang</i>&emsp;Master student&emsp; Apr. 2022 - Mar. 2025</td>
-</tr>
-
-
-<tr>
-<td>&bull;&emsp;<i>Jianfei Zhu</i>&emsp;Master student&emsp; May 2021 - Jun. 2024</td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;<i>Chenglin Xun</i>&emsp;Undergraduate thesis student&emsp; Dec. 2024 - Jun. 2025</td>
-</tr>
-
-
-<tr>
-<td>&bull;&emsp;<i>Yuhan Xie</i>&emsp;Undergraduate thesis student&emsp; Dec. 2024 - Jun. 2025</td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;<i>Shunkang Liu</i>&emsp;Undergraduate thesis student&emsp; Dec. 2024 - Jun. 2025</td>
-</tr>
-
-
-
-<tr>
-<td>&bull;&emsp;<i>Wenjun Liang</i>&emsp;Undergraduate thesis student&emsp; Dec. 2023 - Jun. 2024</td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;<i>Huashan Lei</i>&emsp;Undergraduate thesis student&emsp; Jun. 2021 - Jun. 2023</td>
-</tr>
-
-
-<tr>
-<td>&bull;&emsp;<i>Yingzhou Tao</i>&emsp;Undergraduate thesis student&emsp; Oct. 2022 - Jun. 2023</td>
-</tr>
-	
-<tr>
-<td>&bull;&emsp;<i>Jun Liu</i>&emsp;Undergraduate thesis student&emsp; Dec. 2020 - Jun. 2021</td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;<i>Fusheng Zhang</i>&emsp;Undergraduate thesis student&emsp; Dec. 2020 - Jun. 2021</td>
-</tr>
-
-</table>
-</div>
-
-
-
-<div class="container" id="nav-services">
+<section id="services" class="section">
 <h2>Professional Services</h2>
 
-<table>
-
-<tr>
-<td><b>Membership</b>
-</td>
-</tr>
-
-
-
-<tr>
-<td>&bull;&emsp;Member of IEEE/ACM/CCF</td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;Member of CCF Technical Committee on Systems Software (<a href="https://www.ccf.org.cn/Chapters/TC/TC_Listing/TCSS/">CCF TCSS</a>)</td>
-</tr>
-
-
-</table>
-
-&nbsp;
-
-<table>
-<tr>
-<td style="width:275px;">
-<b>Conference Committee Members</b>
-</td>
-<td></td>
-</tr>
-
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>17th Asia-Pacific Symposium on Internetware (<a href="https://conf.researchr.org/home/internetware-2026">Internetware 2026</a>)</td>
-</tr>
-
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>26th IEEE International Conference on Software Quality, Reliability and Security (<a href="https://qrs26.techconf.org/">QRS 2026</a>)</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>36th IEEE International Symposium on Software Reliability Engineering (<a href="https://issre.github.io/2025/">ISSRE 2025</a>)</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>25th IEEE International Conference on Software Quality, Reliability and Security (<a href="https://qrs25.techconf.org/">QRS 2025</a>)</td>
-</tr>
-
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>16th Asia-Pacific Symposium on Internetware (<a href="https://conf.researchr.org/home/internetware-2025">Internetware 2025</a>)</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>Student Research Competition, The ACM International Conference on the Foundations of Software Engineering (<a href="https://conf.researchr.org/track/fse-2025/fse-2025-student-research-competition">FSE 2025</a>)</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>7th International Workshop on Dependable Intelligent Systems (<a href="https://qrs25.techconf.org/track/workshops/deis">DeIS 2025</a>)</td>
-</tr>
-
-
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>35th IEEE International Symposium on Software Reliability Engineering (<a href="https://issre.github.io/2024/">ISSRE 2024</a>)</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>15th Asia-Pacific Symposium on Internetware (<a href="https://conf.researchr.org/home/internetware-2024">Internetware 2024</a>)</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>24th IEEE International Conference on Software Quality, Reliability and Security (<a href="https://qrs24.techconf.org/">QRS 2024</a>)</td>
-</tr>
-
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>6th International Workshop on Dependable Intelligent Systems (<a href="https://qrs24.techconf.org/track/workshops/deis">DeIS 2024</a>)</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>23rd IEEE International Conference on Software Quality, Reliability and Security (<a href="https://qrs23.techconf.org/">QRS 2023</a>)</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>34th IEEE International Symposium on Software Reliability Engineering (<a href="https://issre.github.io/2023/">ISSRE 2023</a>)</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>3rd International Symposium on Advanced Security on Software and Systems (<a href="https://asss.compute.dtu.dk/2023/">ASSS 2023</a>)</td>
-</tr>
-
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>5th International Workshop on Dependable Intelligent Systems (<a href="https://dsa23.techconf.org/track/deis">DeIS 2023</a>)</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>22nd IEEE International Conference on Software Quality, Reliability and Security (<a href="https://qrs22.techconf.org/">QRS 2022</a>)</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Session Chair</td>
-<td>33rd IEEE International Symposium on Software Reliability Engineering (<a href="https://issre2022.github.io/">ISSRE 2022</a>)</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>33rd IEEE International Symposium on Software Reliability Engineering (<a href="https://issre2022.github.io/">ISSRE 2022</a>)</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>2nd International Symposium on Advanced Security on Software and Systems (<a href="https://asss.compute.dtu.dk/2022/">ASSS 2022</a>)</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>4th International Workshop on Dependable Intelligent Systems (<a href="https://dsa22.techconf.org/track/deis">DeIS 2022</a>)</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>21st IEEE International Conference on Software Quality, Reliability and Security (<a href="https://qrs21.techconf.org/">QRS 2021</a>)</td>
-</tr>
-
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>32nd IEEE International Symposium on Software Reliability Engineering (<a href="http://2021.issre.net/">ISSRE 2021</a>)</td>
-</tr>
-  
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>1st International Symposium on Advanced Security on Software and Systems (<a href="https://asss.compute.dtu.dk/2021/">ASSS 2021</a>)</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Co-Chair</td>
-<td>3rd International Workshop on Dependable Intelligent Systems (<a href="https://dsa21.techconf.org/track/deis">DeIS 2021</a>)</td>
-</tr>
-
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Publication Co-Chair</td>
-<td>31st IEEE International Symposium on Software Reliability Engineering (<a href="http://2020.issre.net/">ISSRE 2020</a>)</td>
-</tr>
-
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>31st IEEE International Symposium on Software Reliability Engineering (<a href="http://2020.issre.net/">ISSRE 2020</a>)</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Co-Chair</td>
-<td>2nd International Workshop on Dependable Intelligent Systems (<a href="https://dsa20.techconf.org/track/deis">DeIS 2020</a>)</td>
-</tr>
-  
-<tr>
-<td style="width:275px;">&bull;&emsp;External Reviewer</td>
-<td>24th IEEE Pacific Rim International Symposium on Dependable Computing (<a href="http://prdc.dependability.org/PRDC2019/">PRDC 2019</a>)</td>
-</tr>
-
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Program Committee</td>
-<td>29th IEEE International Symposium on Software Reliability Engineering -- Fast Abstracts Track (<a href="http://2018.issre.net/">ISSRE 2018</a>)</td>
-</tr>
-
-<tr>
-<td style="width:275px;">
-<b>Journal/Proposal/Thesis Reviewers</b>
-</td>
-<td></td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;硕士论文评审专家</td>
-<td><a href="http://www.cdgdc.edu.cn">教育部学位与研究生教育发展中心</a>
-</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Reviewer</td>
-<td><a href="http://www.nsfc.gov.cn/">NSFC</a> Proposal
-</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Journal referee</td>
-<td><a href="http://cjc.ict.ac.cn/">计算机学报</a>
-</td>
-</tr>
-
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Journal referee</td>
-<td>IEEE Transactions on Software Engineering (<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=32">TSE</a>)
-</td>
-</tr>
-
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Journal referee</td>
-<td>ACM Transactions on Software Engineering and Methodology (<a href="https://dl.acm.org/journal/tosem">TOSEM</a>)
-</td>
-</tr>
-
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Journal referee</td>
-<td>Empirical Software Engineering (<a href="https://link.springer.com/journal/10664">EMSE</a>)
-</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Journal referee</td>
-<td>IEEE Transactions on Reliability (<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=24">TRel</a>)
-</td>
-</tr>
-
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Journal referee</td>
-<td>Information and Software Technology (<a href="https://www.sciencedirect.com/journal/information-and-software-technology">IST</a>)
-</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Journal referee</td>
-<td>Science of Computer Programming (<a href="https://www.sciencedirect.com/journal/science-of-computer-programming">SCP</a>)
-</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Journal referee</td>
-<td>Journal of Computer Science and Technology (<a href="https://jcst.ict.ac.cn/">JCST</a>)
-</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Journal referee</td>
-<td>Knowledge-Based Systems (<a href="https://www.sciencedirect.com/journal/knowledge-based-systems">KBS</a>)</td>
-</tr>
-
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Journal referee</td>
-<td>Chinese Journal of Aeronautics (<a href="https://www.journals.elsevier.com/chinese-journal-of-aeronautics">CJA</a>)</td>
-</tr>
-
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Journal referee</td>
-<td><a href="https://www.nature.com/srep/">Scientific Reports</a></td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Journal referee</td>
-<td>International Journal of Computational Intelligence Systems (<a href="https://link.springer.com/journal/44196">IJCIS</a>)</td>
-</tr>
-
-<tr>
-<td style="width:275px;">&bull;&emsp;Journal referee</td>
-<td><a href="https://journals.plos.org/plosone/">PLOS ONE</a></td>
-</tr>
-
-
-
-</table>
-</div>
-
-
-<div class="container" id="nav-teaching">
+<p class="service-category">Membership</p>
+<ul class="simple-list">
+<li>Member of IEEE/ACM/CCF</li>
+<li>Member of CCF Technical Committee on Systems Software (<a href="https://www.ccf.org.cn/Chapters/TC/TC_Listing/TCSS/">CCF TCSS</a>)</li>
+</ul>
+
+<p class="service-category">Conference Committee Members</p>
+<ul class="service-list">
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">17th Asia-Pacific Symposium on Internetware (<a href="https://conf.researchr.org/home/internetware-2026">Internetware 2026</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">26th IEEE International Conference on Software Quality, Reliability and Security (<a href="https://qrs26.techconf.org/">QRS 2026</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">36th IEEE International Symposium on Software Reliability Engineering (<a href="https://issre.github.io/2025/">ISSRE 2025</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">25th IEEE International Conference on Software Quality, Reliability and Security (<a href="https://qrs25.techconf.org/">QRS 2025</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">16th Asia-Pacific Symposium on Internetware (<a href="https://conf.researchr.org/home/internetware-2025">Internetware 2025</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">Student Research Competition, The ACM International Conference on the Foundations of Software Engineering (<a href="https://conf.researchr.org/track/fse-2025/fse-2025-student-research-competition">FSE 2025</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">7th International Workshop on Dependable Intelligent Systems (<a href="https://qrs25.techconf.org/track/workshops/deis">DeIS 2025</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">35th IEEE International Symposium on Software Reliability Engineering (<a href="https://issre.github.io/2024/">ISSRE 2024</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">15th Asia-Pacific Symposium on Internetware (<a href="https://conf.researchr.org/home/internetware-2024">Internetware 2024</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">24th IEEE International Conference on Software Quality, Reliability and Security (<a href="https://qrs24.techconf.org/">QRS 2024</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">6th International Workshop on Dependable Intelligent Systems (<a href="https://qrs24.techconf.org/track/workshops/deis">DeIS 2024</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">23rd IEEE International Conference on Software Quality, Reliability and Security (<a href="https://qrs23.techconf.org/">QRS 2023</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">34th IEEE International Symposium on Software Reliability Engineering (<a href="https://issre.github.io/2023/">ISSRE 2023</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">3rd International Symposium on Advanced Security on Software and Systems (<a href="https://asss.compute.dtu.dk/2023/">ASSS 2023</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">5th International Workshop on Dependable Intelligent Systems (<a href="https://dsa23.techconf.org/track/deis">DeIS 2023</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">22nd IEEE International Conference on Software Quality, Reliability and Security (<a href="https://qrs22.techconf.org/">QRS 2022</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Session Chair</span>
+<span class="service-detail">33rd IEEE International Symposium on Software Reliability Engineering (<a href="https://issre2022.github.io/">ISSRE 2022</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">33rd IEEE International Symposium on Software Reliability Engineering (<a href="https://issre2022.github.io/">ISSRE 2022</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">2nd International Symposium on Advanced Security on Software and Systems (<a href="https://asss.compute.dtu.dk/2022/">ASSS 2022</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">4th International Workshop on Dependable Intelligent Systems (<a href="https://dsa22.techconf.org/track/deis">DeIS 2022</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">21st IEEE International Conference on Software Quality, Reliability and Security (<a href="https://qrs21.techconf.org/">QRS 2021</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">32nd IEEE International Symposium on Software Reliability Engineering (<a href="http://2021.issre.net/">ISSRE 2021</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">1st International Symposium on Advanced Security on Software and Systems (<a href="https://asss.compute.dtu.dk/2021/">ASSS 2021</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Co-Chair</span>
+<span class="service-detail">3rd International Workshop on Dependable Intelligent Systems (<a href="https://dsa21.techconf.org/track/deis">DeIS 2021</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Publication Co-Chair</span>
+<span class="service-detail">31st IEEE International Symposium on Software Reliability Engineering (<a href="http://2020.issre.net/">ISSRE 2020</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">31st IEEE International Symposium on Software Reliability Engineering (<a href="http://2020.issre.net/">ISSRE 2020</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Co-Chair</span>
+<span class="service-detail">2nd International Workshop on Dependable Intelligent Systems (<a href="https://dsa20.techconf.org/track/deis">DeIS 2020</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">External Reviewer</span>
+<span class="service-detail">24th IEEE Pacific Rim International Symposium on Dependable Computing (<a href="http://prdc.dependability.org/PRDC2019/">PRDC 2019</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Program Committee</span>
+<span class="service-detail">29th IEEE International Symposium on Software Reliability Engineering -- Fast Abstracts Track (<a href="http://2018.issre.net/">ISSRE 2018</a>)</span>
+</li>
+
+</ul>
+
+<p class="service-category">Journal/Proposal/Thesis Reviewers</p>
+<ul class="service-list">
+
+<li class="service-item">
+<span class="service-role">硕士论文评审专家</span>
+<span class="service-detail"><a href="http://www.cdgdc.edu.cn">教育部学位与研究生教育发展中心</a></span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Reviewer</span>
+<span class="service-detail"><a href="http://www.nsfc.gov.cn/">NSFC</a> Proposal</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Journal referee</span>
+<span class="service-detail"><a href="http://cjc.ict.ac.cn/">计算机学报</a></span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Journal referee</span>
+<span class="service-detail">IEEE Transactions on Software Engineering (<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=32">TSE</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Journal referee</span>
+<span class="service-detail">ACM Transactions on Software Engineering and Methodology (<a href="https://dl.acm.org/journal/tosem">TOSEM</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Journal referee</span>
+<span class="service-detail">Empirical Software Engineering (<a href="https://link.springer.com/journal/10664">EMSE</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Journal referee</span>
+<span class="service-detail">IEEE Transactions on Reliability (<a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=24">TRel</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Journal referee</span>
+<span class="service-detail">Information and Software Technology (<a href="https://www.sciencedirect.com/journal/information-and-software-technology">IST</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Journal referee</span>
+<span class="service-detail">Science of Computer Programming (<a href="https://www.sciencedirect.com/journal/science-of-computer-programming">SCP</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Journal referee</span>
+<span class="service-detail">Journal of Computer Science and Technology (<a href="https://jcst.ict.ac.cn/">JCST</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Journal referee</span>
+<span class="service-detail">Knowledge-Based Systems (<a href="https://www.sciencedirect.com/journal/knowledge-based-systems">KBS</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Journal referee</span>
+<span class="service-detail">Chinese Journal of Aeronautics (<a href="https://www.journals.elsevier.com/chinese-journal-of-aeronautics">CJA</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Journal referee</span>
+<span class="service-detail"><a href="https://www.nature.com/srep/">Scientific Reports</a></span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Journal referee</span>
+<span class="service-detail">International Journal of Computational Intelligence Systems (<a href="https://link.springer.com/journal/44196">IJCIS</a>)</span>
+</li>
+
+<li class="service-item">
+<span class="service-role">Journal referee</span>
+<span class="service-detail"><a href="https://journals.plos.org/plosone/">PLOS ONE</a></span>
+</li>
+
+</ul>
+</section>
+
+
+<section id="teaching" class="section">
 <h2>Teaching</h2>
-<table>
-
-<tr>
-<td>&bull;&emsp;Intelligent Software Development and Testing Technology, 2025 - now</td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;Discrete Mathematics, 2021 - now</td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;Operating Systems, 2020-2022</td>
-</tr>
-
-</table>
-</div>
+<ul class="simple-list">
+<li>Intelligent Software Development and Testing Technology, 2025 - now</li>
+<li>Discrete Mathematics, 2021 - now</li>
+<li>Operating Systems, 2020-2022</li>
+</ul>
+</section>
 
 
-
-<div class="container" id="nav-tools">
+<section id="tools" class="section">
 <h2>Tools</h2>
-<table>
+<ul class="simple-list">
+<li><a href="https://github.com/PCART-tools/PCART">PCART</a> is a precisely and fully automated detection and repair tool for Python API parameter compatibility issues.</li>
+<li><a href="https://github.com/pcart-tools/pcreq">PCREQ</a> is an automated tool for inferring compatible requirements for Python third-party library (TPL) upgrades.</li>
+<li><a href="https://github.com/PCART-tools/PCBench">PCBench</a> is a benchmark for evaluating methods to detect and repair Python API parameter compatibility issues.</li>
+<li><a href="https://github.com/pcart-tools/REQBench">REQBench</a> is a benchmark for evaluating methods to infer compatible requirements for Python third-party library upgrades.</li>
+<li><a href="https://github.com/pcart-tools/VPPDetector">VPPDetector</a> is a tool designed to detect <a href="publications/ISSRE24.pdf">variadic parameter pitfalls (VPPs)</a> in Python code.</li>
+</ul>
+</section>
 
 
-<tr>
-<td>&bull;&emsp;<a href="https://github.com/PCART-tools/PCART">PCART</a> is a precisely and fully automated detection and repair tool for Python API parameter compatibility issues. </td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;<a href="https://github.com/PCART-tools/PCBench">PCBench</a> is a benchmark for evaluating methods to detect and repair Python API parameter compatibility issues. </td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;<a href="https://github.com/pcart-tools/VPPDetector">VPPDetector</a> is a tool designed to detect <a href="publications/ISSRE24.pdf">variadic parameter pitfalls (VPPs)</a> in Python code.  </td>
-</tr>
-
-
-</table>
-</div>
-
-
-
-
-
-<div class="container" id="nav-grants">
+<section id="grants" class="section">
 <h2>Research Grants</h2>
-<table>
-
-<tr>
-<td>&bull;&emsp;Open Research Fund of State Key Laboratory of Novel Software Technology (KFKT2025B13), CNY 20,000, 2025.06-2027.05, PI</td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;Open Research Fund of Key Laboratory for Safety-critical Software Development and Verification (NUAA), Ministry of Industry and Information Technology, CNY 30,000, 2024.06-2026.05, PI</td>
-</tr>
-
-
-<tr>
-<td>&bull;&emsp;National Natural Science Foundation of China, Young Scientists Fund (62002163): <i>Research on Recovery, Analysis, and Prediction of Regression Bug Chains</i>, CNY 240,000, 2021.01-2023.12, PI</td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;Natural Science Foundation of Jiangsu Province, Young Scientists Fund (BK20200441): <i>Research on Multi-Sourced Heterogeneous Software Networks: Co-Evolution Analysis and Applications</i>, CNY 200,000, 2020.07-2023.06, PI</td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;Open Research Fund of State Key Laboratory of Novel Software Technology (KFKT2020B20), CNY 15,000, 2020.06-2022.05, PI</td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;Start-up Fund for NUAA New Faculty (YAH20026), CNY 60,000, 2020.04-2022.03, PI</td>
-</tr>
-
-</table>
-</div>
+<ul class="simple-list">
+<li>Open Research Fund of State Key Laboratory of Novel Software Technology (KFKT2025B13), CNY 20,000, 2025.06-2027.05, PI</li>
+<li>Open Research Fund of Key Laboratory for Safety-critical Software Development and Verification (NUAA), Ministry of Industry and Information Technology, CNY 30,000, 2024.06-2026.05, PI</li>
+<li>National Natural Science Foundation of China, Young Scientists Fund (62002163): <i>Research on Recovery, Analysis, and Prediction of Regression Bug Chains</i>, CNY 240,000, 2021.01-2023.12, PI</li>
+<li>Natural Science Foundation of Jiangsu Province, Young Scientists Fund (BK20200441): <i>Research on Multi-Sourced Heterogeneous Software Networks: Co-Evolution Analysis and Applications</i>, CNY 200,000, 2020.07-2023.06, PI</li>
+<li>Open Research Fund of State Key Laboratory of Novel Software Technology (KFKT2020B20), CNY 15,000, 2020.06-2022.05, PI</li>
+<li>Start-up Fund for NUAA New Faculty (YAH20026), CNY 60,000, 2020.04-2022.03, PI</li>
+</ul>
+</section>
 
 
-
-<div class="container">
+<section id="links" class="section">
 <h2>Useful Links</h2>
-<table >
-<tr>
-<td>&bull;&emsp;<a href="http://www.cs.columbia.edu/~hgs/etc/writing-style.html">Writing Technical Articles</a></td>
-</tr>
+<ul class="simple-list">
+<li><a href="http://www.cs.columbia.edu/~hgs/etc/writing-style.html">Writing Technical Articles</a></li>
+<li><a href="https://brians.wsu.edu/common-errors/">Common Errors in English Usage</a></li>
+<li><a href="http://colorbrewer2.org/">ColorBrewer: Color Advice for Maps</a></li>
+<li><a href="https://www.theodysseyonline.com/5-simple-rules-happiness">Five Simple Rules to Be Happy</a></li>
+</ul>
+</section>
 
-
-<tr>
-<td>&bull;&emsp;<a href="https://brians.wsu.edu/common-errors/">Common Errors in English Usage</a></td>
-</tr>
-
-<tr>
-<td>&bull;&emsp;<a href="http://colorbrewer2.org/">ColorBrewer: Color Advice for Maps</a></td>
-</tr>
-
-
-<tr>
-<td>&bull;&emsp;<a href="https://www.theodysseyonline.com/5-simple-rules-happiness">Five Simple Rules to Be Happy</a>
-</td>
-</tr>
-
-</table>
-</div>
-<div class="container">&nbsp;</div>
-</div>
+</main>
 
 <script>
-const link_publications = document.querySelector('.nav-publications');
-target_publications = document.getElementById('nav-publications');
+const sections = document.querySelectorAll('.section');
+const navLinks = document.querySelectorAll('.nav-link');
 
-const link_team = document.querySelector('.nav-students');
-target_team = document.getElementById('nav-students');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(link => link.classList.remove('active'));
+      const activeLink = document.querySelector('.nav-link[href="#' + entry.target.id + '"]');
+      if (activeLink) activeLink.classList.add('active');
+    }
+  });
+}, { rootMargin: '-20% 0px -80% 0px' });
 
-const link_services = document.querySelector('.nav-services');
-target_services = document.getElementById('nav-services');
+sections.forEach(section => observer.observe(section));
 
-const link_teaching = document.querySelector('.nav-teaching');
-target_teaching = document.getElementById('nav-teaching');
+const newsToggle = document.getElementById('news-toggle');
+const newsList = document.getElementById('news-list');
 
+newsToggle.addEventListener('click', () => {
+  newsList.classList.toggle('show-all');
+  newsToggle.textContent = newsList.classList.contains('show-all') ? 'Show less' : 'Show older news';
+});
 
-const link_tools = document.querySelector('.nav-tools');
-target_tools = document.getElementById('nav-tools');
+const hamburger = document.getElementById('hamburger');
+const sidebar = document.getElementById('sidebar');
 
-const link_grants = document.querySelector('.nav-grants');
-target_grants = document.getElementById('nav-grants');
+hamburger.addEventListener('click', () => {
+  sidebar.classList.toggle('menu-open');
+});
 
-
-config = {
-	behavior: 'smooth'
-}
-
-link_publications.addEventListener('click', (event)=>{
-	event.stopPropagation();
-	target_publications.scrollIntoView(config);
-})
-
-link_team.addEventListener('click', (event)=>{
-	event.stopPropagation();
-	target_team.scrollIntoView(config);
-})
-
-
-link_services.addEventListener('click', (event)=>{
-	event.stopPropagation();
-	target_services.scrollIntoView(config);
-})
-
-
-link_teaching.addEventListener('click', (event)=>{
-	event.stopPropagation();
-	target_teaching.scrollIntoView(config);
-})
-
-
-link_tools.addEventListener('click', (event)=>{
-	event.stopPropagation();
-	target_tools.scrollIntoView(config);
-})
-
-
-link_grants.addEventListener('click', (event)=>{
-	event.stopPropagation();
-	target_grants.scrollIntoView(config);
-})
-
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    sidebar.classList.remove('menu-open');
+  });
+});
 </script>
-
 
 </body>
 </html>
