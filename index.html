@@ -999,10 +999,6 @@ const link_grants = document.querySelector('.nav-grants');
 target_grants = document.getElementById('nav-grants');
 
 
-const link_awards = document.querySelector('.nav-awards');
-target_awards = document.getElementById('nav-awards');
-
-
 config = {
 	behavior: 'smooth'
 }
@@ -1040,12 +1036,6 @@ link_grants.addEventListener('click', (event)=>{
 	event.stopPropagation();
 	target_grants.scrollIntoView(config);
 })
-
-link_awards.addEventListener('click', (event)=>{
-	event.stopPropagation();
-	target_awards.scrollIntoView(config);
-})
-
 
 </script>
 
